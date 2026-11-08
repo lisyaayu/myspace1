@@ -1,0 +1,499 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #fffafc;
+    color: #44343d;
+}
+
+.knowme-container {
+    max-width: 1250px;
+    margin: auto;
+    padding: 0 35px;
+}
+
+/* HEADER */
+
+.knowme-header {
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #f4e7ed;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    text-decoration: none;
+    color: #49323f;
+    font-size: 23px;
+    font-weight: 750;
+}
+
+.brand-icon {
+    width: 39px;
+    height: 39px;
+    border-radius: 13px;
+    background: #f9dce9;
+    color: #d77ca7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.back-button {
+    text-decoration: none;
+    color: #886b79;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.back-button:hover {
+    color: #d77ca7;
+}
+
+/* HERO */
+
+.knowme-hero {
+    margin-top: 35px;
+    min-height: 310px;
+    background: linear-gradient(120deg, #fce6ef, #fff0e9);
+    border-radius: 25px;
+    padding: 45px 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    max-width: 620px;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-label {
+    font-size: 11px;
+    font-weight: 750;
+    letter-spacing: 2px;
+    color: #c4779c;
+}
+
+.hero-content h1 {
+    font-size: clamp(30px, 4vw, 43px);
+    font-weight: 750;
+    margin: 15px 0;
+    color: #49323f;
+}
+
+.hero-content h1 span {
+    color: #d77ca7;
+}
+
+.hero-content p {
+    color: #806a75;
+    font-size: 14px;
+    line-height: 1.9;
+    max-width: 580px;
+}
+
+.hero-button {
+    display: inline-flex;
+    gap: 12px;
+    align-items: center;
+    background: #d77ca7;
+    color: white;
+    text-decoration: none;
+    padding: 13px 23px;
+    border-radius: 12px;
+    margin-top: 12px;
+    font-size: 13px;
+    font-weight: 650;
+    transition: .2s;
+}
+
+.hero-button:hover {
+    background: #bd638e;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.hero-decoration {
+    width: 230px;
+    height: 220px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-circle {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    background: rgba(255,255,255,.65);
+    color: #d77ca7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 76px;
+}
+
+.hero-star {
+    position: absolute;
+    color: #d77ca7;
+    font-size: 27px;
+}
+
+.star-one {
+    top: 12px;
+    right: 15px;
+}
+
+.star-two {
+    bottom: 15px;
+    left: 5px;
+}
+
+.star-three {
+    top: 45px;
+    left: 0;
+}
+
+/* PROGRESS */
+
+.progress-section {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 25px;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.progress-card {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    padding: 22px;
+    border-radius: 17px;
+    background: white;
+    border: 1px solid #f3e7ed;
+}
+
+.progress-icon {
+    width: 50px;
+    height: 50px;
+    background: #fce6ef;
+    color: #d77ca7;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.progress-card span {
+    color: #987d8b;
+    font-size: 11px;
+}
+
+.progress-card h2 {
+    font-size: 26px;
+    margin-top: 5px;
+    font-weight: 750;
+}
+
+.progress-card h2 small {
+    color: #b9a5ae;
+    font-size: 14px;
+}
+
+.progress-description h3 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.progress-description p {
+    color: #917c86;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+/* SECTION */
+
+.test-section {
+    margin-top: 55px;
+}
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.section-label {
+    color: #d77ca7;
+    font-size: 10px;
+    font-weight: 750;
+    letter-spacing: 2px;
+}
+
+.section-heading h2 {
+    font-size: 25px;
+    font-weight: 750;
+    margin-top: 7px;
+}
+
+.section-heading p {
+    color: #927e88;
+    font-size: 13px;
+    margin-top: 6px;
+}
+
+.test-count {
+    background: #fce6ef;
+    color: #bd7095;
+    padding: 9px 15px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+/* TEST CARDS */
+
+.test-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.test-card {
+    background: white;
+    padding: 25px;
+    border: 1px solid #f1e5eb;
+    border-radius: 19px;
+    transition: .25s;
+    display: flex;
+    flex-direction: column;
+    min-height: 270px;
+}
+
+.test-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(190, 120, 153, .10);
+    border-color: #edcada;
+}
+
+.test-card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.test-icon {
+    width: 54px;
+    height: 54px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
+}
+
+.test-icon.personality {
+    background: #fbe3ee;
+    color: #d77ca7;
+}
+
+.test-icon.interests {
+    background: #f1e9ff;
+    color: #9b7bd2;
+}
+
+.test-icon.strengths {
+    background: #fff1dc;
+    color: #d69a49;
+}
+
+.test-icon.love {
+    background: #ffe8e4;
+    color: #dc8c8c;
+}
+
+.test-number {
+    font-size: 10px;
+    color: #b7a3ad;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.test-content {
+    margin-top: 20px;
+    flex: 1;
+}
+
+.test-category {
+    color: #d17da2;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.test-content h3 {
+    font-size: 19px;
+    font-weight: 750;
+    margin: 7px 0;
+}
+
+.test-content p {
+    color: #927f89;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.test-button {
+    border-top: 1px solid #f4eaf0;
+    padding-top: 16px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #cb79a0;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.test-button:hover {
+    color: #a9527b;
+}
+
+/* REMINDER */
+
+.reminder-card {
+    margin-top: 45px;
+    padding: 28px 32px;
+    background: #f8f0e9;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.reminder-icon {
+    width: 55px;
+    height: 55px;
+    flex-shrink: 0;
+    background: white;
+    color: #bd9c78;
+    border-radius: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.reminder-card span {
+    color: #b48c6b;
+    font-size: 10px;
+    letter-spacing: 2px;
+    font-weight: 750;
+}
+
+.reminder-card h3 {
+    font-size: 19px;
+    font-weight: 750;
+    margin: 7px 0;
+}
+
+.reminder-card p {
+    font-size: 12px;
+    color: #8f7a6c;
+    margin-bottom: 0;
+    line-height: 1.7;
+}
+
+/* FOOTER */
+
+.knowme-footer {
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 20px;
+    color: #a9959e;
+    font-size: 11px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .knowme-container {
+        padding: 0 18px;
+    }
+
+    .knowme-header {
+        height: 70px;
+    }
+
+    .brand {
+        font-size: 20px;
+    }
+
+    .back-button {
+        font-size: 12px;
+    }
+
+    .knowme-hero {
+        padding: 30px 25px;
+        min-height: auto;
+    }
+
+    .hero-decoration {
+        display: none;
+    }
+
+    .progress-section {
+        grid-template-columns: 1fr;
+    }
+
+    .test-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-heading {
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .test-count {
+        white-space: nowrap;
+    }
+
+    .reminder-card {
+        padding: 22px;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .back-button span {
+        display: none;
+    }
+
+    .section-heading h2 {
+        font-size: 21px;
+    }
+
+    .test-count {
+        font-size: 9px;
+    }
+}

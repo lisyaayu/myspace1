@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fff7fa;
+    color: #765966;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.nutrition-topbar {
+    height: 70px;
+    padding: 0 7%;
+    background: white;
+    border-bottom: 1px solid #f3e3e9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.back-link {
+    color: #ad8d9b;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.brand {
+    color: #c77f9c;
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.brand i {
+    color: #e6a9c0;
+}
+
+.nutrition-container {
+    max-width: 1100px;
+    width: 90%;
+    margin: auto;
+    padding: 38px 0 65px;
+}
+
+.nutrition-hero {
+    padding: 42px;
+    border-radius: 25px;
+    background: linear-gradient(120deg, #fce5ed, #f6d4e1);
+}
+
+.eyebrow,
+.small-label {
+    color: #c47d99;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.nutrition-hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(30px, 5vw, 43px);
+    color: #87566c;
+    margin: 13px 0;
+}
+
+.nutrition-hero p {
+    max-width: 600px;
+    color: #a77f90;
+    font-size: 13px;
+    line-height: 1.9;
+}
+
+.notice {
+    margin-top: 18px;
+    padding: 13px 16px;
+    border-radius: 11px;
+    font-size: 12px;
+}
+
+.success {
+    background: #fceaf1;
+    color: #a65378;
+}
+
+.error {
+    background: #fff0f0;
+    color: #b44e59;
+}
+
+.hydration-card {
+    margin-top: 23px;
+    padding: 28px 32px;
+    background: white;
+    border: 1px solid #f1e2e9;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.hydration-info {
+    flex: 1;
+}
+
+.hydration-info h2 {
+    color: #a85f7d;
+    font-family: 'Playfair Display', serif;
+    font-size: 35px;
+    margin: 8px 0;
+}
+
+.hydration-info h2 small {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    color: #c4a0af;
+}
+
+.hydration-info p {
+    font-size: 12px;
+    color: #b28e9e;
+}
+
+.water-progress {
+    height: 10px;
+    margin-top: 18px;
+    max-width: 520px;
+    border-radius: 20px;
+    background: #f8eaf0;
+    overflow: hidden;
+}
+
+.water-progress div {
+    height: 100%;
+    border-radius: 20px;
+    background: linear-gradient(90deg, #f0a9c2, #d879a0);
+    transition: width .3s ease;
+}
+
+.progress-caption {
+    display: block;
+    margin-top: 8px;
+    color: #c4a0af;
+    font-size: 10px;
+}
+
+.water-icon {
+    width: 85px;
+    height: 85px;
+    border-radius: 25px;
+    background: #fce8f0;
+    display: grid;
+    place-items: center;
+    color: #d879a0;
+    font-size: 35px;
+}
+
+.goal-note {
+    color: #b99aa8;
+    font-size: 10px;
+    line-height: 1.7;
+    margin: 10px 3px 22px;
+}
+
+.nutrition-layout {
+    display: grid;
+    grid-template-columns: .85fr 1.15fr;
+    gap: 20px;
+    align-items: start;
+}
+
+.nutrition-form-card,
+.nutrition-history-card {
+    padding: 27px;
+    background: white;
+    border: 1px solid #f1e2e9;
+    border-radius: 20px;
+}
+
+.nutrition-form-card h2,
+.nutrition-history-card h2 {
+    font-family: 'Playfair Display', serif;
+    color: #96647a;
+    font-size: 22px;
+    margin: 8px 0;
+}
+
+.muted {
+    color: #b99eaa;
+    font-size: 12px;
+}
+
+.nutrition-form-card label {
+    display: block;
+    color: #a77b90;
+    font-size: 12px;
+    font-weight: 700;
+    margin: 17px 0 7px;
+}
+
+.nutrition-form-card input,
+.nutrition-form-card select,
+.nutrition-form-card textarea,
+.history-heading input {
+    width: 100%;
+    border: 1px solid #f0dfe7;
+    border-radius: 10px;
+    padding: 12px;
+    background: #fffafd;
+    color: #765966;
+    font-family: inherit;
+    font-size: 12px;
+    outline: none;
+}
+
+.nutrition-form-card input:focus,
+.nutrition-form-card select:focus,
+.nutrition-form-card textarea:focus {
+    border-color: #e3a1ba;
+}
+
+.nutrition-form-card textarea {
+    resize: vertical;
+}
+
+.primary-button {
+    width: 100%;
+    margin-top: 19px;
+    padding: 13px;
+    border: 0;
+    border-radius: 10px;
+    background: #d985a5;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.primary-button:hover {
+    background: #c46d90;
+}
+
+.history-heading {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.history-heading form {
+    width: 140px;
+}
+
+.history-heading input {
+    padding: 9px;
+}
+
+.empty-state {
+    text-align: center;
+    padding: 45px 10px;
+    color: #b99eaa;
+}
+
+.empty-state > i {
+    font-size: 38px;
+    color: #e6a9c0;
+    margin-bottom: 15px;
+}
+
+.empty-state h3 {
+    color: #a8758d;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 8px;
+}
+
+.empty-state p {
+    font-size: 11px;
+    line-height: 1.7;
+}
+
+.nutrition-record {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 16px 0;
+    border-bottom: 1px solid #f5eaf0;
+}
+
+.nutrition-record:last-child {
+    border-bottom: 0;
+}
+
+.record-icon {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 13px;
+    background: #fceaf1;
+    color: #ce7f9e;
+    display: grid;
+    place-items: center;
+}
+
+.record-details {
+    flex: 1;
+    min-width: 0;
+}
+
+.record-details h3 {
+    font-size: 13px;
+    color: #96647a;
+    margin-bottom: 5px;
+}
+
+.record-details span {
+    color: #b99eaa;
+    font-size: 10px;
+}
+
+.record-details p {
+    margin-top: 7px;
+    color: #a78d9a;
+    font-size: 11px;
+    line-height: 1.7;
+    overflow-wrap: anywhere;
+}
+
+.delete-button {
+    width: 32px;
+    height: 32px;
+    border: 0;
+    border-radius: 9px;
+    background: #fff0f2;
+    color: #c77b85;
+    cursor: pointer;
+}
+
+.nutrition-reminder {
+    margin-top: 23px;
+    padding: 24px;
+    border-radius: 17px;
+    background: #fceaf1;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    color: #c47d99;
+}
+
+.nutrition-reminder > i {
+    font-size: 27px;
+}
+
+.nutrition-reminder h3 {
+    font-family: 'Playfair Display', serif;
+    color: #96647a;
+    margin-bottom: 6px;
+}
+
+.nutrition-reminder p {
+    color: #a78d9a;
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+@media (max-width: 800px) {
+    .nutrition-layout {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 550px) {
+    .nutrition-container {
+        width: 92%;
+        padding-top: 25px;
+    }
+
+    .nutrition-hero {
+        padding: 28px;
+    }
+
+    .nutrition-form-card,
+    .nutrition-history-card {
+        padding: 20px;
+    }
+
+    .nutrition-topbar {
+        padding: 0 4%;
+    }
+
+    .hydration-card {
+        padding: 22px;
+    }
+
+    .water-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 25px;
+    }
+
+    .history-heading {
+        flex-direction: column;
+    }
+
+    .history-heading form {
+        width: 100%;
+    }
+}

@@ -1,0 +1,726 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #fff9fc;
+    color: #594b59;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.selfcare-topbar {
+    height: 70px;
+    padding: 0 7%;
+    background: white;
+    border-bottom: 1px solid #f1e8ed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.back-link {
+    color: #8c7c8b;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.back-link:hover {
+    color: #ca7b9b;
+}
+
+.brand {
+    color: #d17c9e;
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.brand i {
+    color: #e6abc2;
+}
+
+.selfcare-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 38px 0 60px;
+}
+
+.selfcare-hero {
+    min-height: 300px;
+    padding: 42px;
+    border-radius: 25px;
+    background: linear-gradient(120deg, #fce8f0, #f6d7e5);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    overflow: hidden;
+}
+
+.eyebrow,
+.small-label,
+.section-heading > span {
+    color: #c8799a;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.selfcare-hero h1 {
+    color: #704b60;
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(30px, 5vw, 45px);
+    line-height: 1.2;
+    margin: 14px 0;
+}
+
+.selfcare-hero p {
+    color: #92778a;
+    font-size: 13px;
+    line-height: 1.9;
+    max-width: 560px;
+}
+
+.hero-button {
+    display: inline-block;
+    margin-top: 22px;
+    padding: 12px 19px;
+    background: #ca7c9c;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 700;
+    transition: .2s;
+}
+
+.hero-button:hover {
+    background: #b9698b;
+    transform: translateY(-2px);
+}
+
+.hero-button i {
+    margin-left: 8px;
+}
+
+.hero-decoration {
+    width: 125px;
+    height: 125px;
+    flex-shrink: 0;
+    border-radius: 40px;
+    background: rgba(255,255,255,.55);
+    color: #d28aaa;
+    display: grid;
+    place-items: center;
+    font-size: 53px;
+    transform: rotate(8deg);
+}
+
+.notice {
+    padding: 13px 16px;
+    border-radius: 11px;
+    margin-top: 18px;
+    font-size: 12px;
+}
+
+.success {
+    background: #e7f6ed;
+    color: #397c59;
+}
+
+.error {
+    background: #fff0f0;
+    color: #b44e59;
+}
+
+/* STATISTIK */
+
+.selfcare-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 17px;
+    margin: 23px 0;
+}
+
+.stat-card {
+    padding: 22px;
+    background: white;
+    border: 1px solid #f0e7ed;
+    border-radius: 17px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.stat-icon {
+    width: 47px;
+    height: 47px;
+    border-radius: 15px;
+    background: #fcebf2;
+    color: #cf83a2;
+    display: grid;
+    place-items: center;
+    font-size: 19px;
+}
+
+.stat-card span {
+    display: block;
+    color: #a18e9c;
+    font-size: 11px;
+    margin-bottom: 4px;
+}
+
+.stat-card strong {
+    color: #76566b;
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+}
+
+/* IDE SELF-CARE */
+
+.ideas-section {
+    padding: 38px 0 15px;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.section-heading h2 {
+    color: #76566b;
+    font-family: 'Playfair Display', serif;
+    font-size: 29px;
+    margin: 9px 0;
+}
+
+.section-heading p {
+    color: #a18e9c;
+    font-size: 12px;
+}
+
+.ideas-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 17px;
+}
+
+/* KARTU DIBUAT BISA DIKLIK */
+
+.idea-card {
+    width: 100%;
+    min-height: 190px;
+    padding: 23px;
+    background: white;
+    border: 1px solid #f0e7ed;
+    border-radius: 18px;
+    text-align: left;
+    font-family: inherit;
+    cursor: pointer;
+    position: relative;
+    transition: .25s ease;
+}
+
+.idea-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(111, 70, 91, .10);
+    border-color: #e7b4c8;
+}
+
+.idea-card:active {
+    transform: scale(.98);
+}
+
+.idea-card:focus-visible {
+    outline: 3px solid rgba(202, 124, 156, .35);
+    outline-offset: 3px;
+}
+
+.idea-icon {
+    width: 47px;
+    height: 47px;
+    border-radius: 14px;
+    display: grid;
+    place-items: center;
+    font-size: 19px;
+    margin-bottom: 16px;
+}
+
+.pink {
+    background: #fceaf1;
+    color: #cc82a0;
+}
+
+.lavender {
+    background: #f0ebfa;
+    color: #9885c0;
+}
+
+.peach {
+    background: #fff0e7;
+    color: #d89a73;
+}
+
+.green {
+    background: #e9f5ec;
+    color: #79a989;
+}
+
+.blue {
+    background: #e8f2fa;
+    color: #77a2c3;
+}
+
+.yellow {
+    background: #fff6df;
+    color: #c5a65d;
+}
+
+.idea-card h3 {
+    color: #765a6c;
+    font-family: 'Playfair Display', serif;
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+
+.idea-card p {
+    color: #9b8b99;
+    font-size: 11px;
+    line-height: 1.8;
+}
+
+.idea-hint {
+    display: block;
+    margin-top: 13px;
+    color: #c47c9a;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+/* MODAL DETAIL IDE */
+
+.idea-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    padding: 20px;
+    background: rgba(66, 42, 57, .45);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(4px);
+}
+
+.idea-modal.active {
+    display: flex;
+}
+
+.idea-modal-content {
+    width: 100%;
+    max-width: 480px;
+    max-height: 85vh;
+    overflow-y: auto;
+    padding: 32px;
+    background: #fffafd;
+    border: 1px solid #f0e2ea;
+    border-radius: 23px;
+    box-shadow: 0 20px 60px rgba(65, 38, 54, .18);
+    position: relative;
+    animation: modalAppear .25s ease;
+}
+
+@keyframes modalAppear {
+    from {
+        opacity: 0;
+        transform: translateY(15px) scale(.97);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.idea-modal-close {
+    position: absolute;
+    top: 15px;
+    right: 17px;
+    width: 34px;
+    height: 34px;
+    border: 0;
+    border-radius: 50%;
+    background: #fcebf2;
+    color: #bd7895;
+    font-size: 18px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.idea-modal-close:hover {
+    background: #f5d9e5;
+    transform: rotate(90deg);
+}
+
+.idea-modal-content h2 {
+    margin: 10px 35px 12px 0;
+    color: #76566b;
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+}
+
+.idea-modal-content p {
+    color: #927f8d;
+    font-size: 12px;
+    line-height: 1.9;
+    margin-bottom: 15px;
+}
+
+.idea-modal-content h3 {
+    color: #80576d;
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    margin: 18px 0 10px;
+}
+
+.idea-modal-content ul {
+    padding-left: 20px;
+    color: #927f8d;
+    font-size: 12px;
+    line-height: 2;
+}
+
+.idea-modal-content li {
+    padding-left: 4px;
+    margin-bottom: 5px;
+}
+
+.idea-modal-action {
+    display: inline-block;
+    margin-top: 22px;
+    padding: 11px 18px;
+    border: 0;
+    border-radius: 10px;
+    background: #ca7c9c;
+    color: white;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.idea-modal-action:hover {
+    background: #b9698b;
+}
+
+/* FORM DAN RIWAYAT */
+
+.selfcare-layout {
+    display: grid;
+    grid-template-columns: .9fr 1.1fr;
+    gap: 20px;
+    align-items: start;
+    padding-top: 35px;
+}
+
+.selfcare-form-card,
+.selfcare-history-card {
+    padding: 27px;
+    background: white;
+    border: 1px solid #f0e7ed;
+    border-radius: 20px;
+}
+
+.selfcare-form-card h2,
+.selfcare-history-card h2 {
+    color: #76566b;
+    font-family: 'Playfair Display', serif;
+    font-size: 23px;
+    margin: 8px 0;
+}
+
+.muted {
+    color: #a18e9c;
+    font-size: 12px;
+}
+
+.selfcare-form-card label {
+    display: block;
+    margin: 17px 0 7px;
+    color: #806b7c;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.selfcare-form-card input,
+.selfcare-form-card select,
+.selfcare-form-card textarea,
+.history-heading input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #eee3eb;
+    border-radius: 10px;
+    background: #fffafd;
+    color: #705b6d;
+    font-family: inherit;
+    font-size: 12px;
+    outline: none;
+}
+
+.selfcare-form-card input:focus,
+.selfcare-form-card select:focus,
+.selfcare-form-card textarea:focus {
+    border-color: #d68eac;
+    box-shadow: 0 0 0 3px rgba(214,142,172,.1);
+}
+
+.selfcare-form-card textarea {
+    resize: vertical;
+}
+
+.submit-button {
+    width: 100%;
+    margin-top: 18px;
+    padding: 13px;
+    border: 0;
+    border-radius: 10px;
+    background: #ca7c9c;
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.submit-button:hover {
+    background: #b9698b;
+}
+
+/* RIWAYAT JURNAL */
+
+.history-heading {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.history-heading form {
+    width: 140px;
+}
+
+.history-heading input {
+    padding: 9px;
+}
+
+.empty-state {
+    padding: 45px 10px;
+    text-align: center;
+    color: #a18e9c;
+}
+
+.empty-state > i {
+    color: #dca5bc;
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.empty-state h3 {
+    color: #806b7c;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 8px;
+}
+
+.empty-state p {
+    font-size: 11px;
+    line-height: 1.8;
+}
+
+.journal-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 16px 0;
+    border-bottom: 1px solid #f2eaf0;
+}
+
+.journal-item:last-child {
+    border-bottom: 0;
+}
+
+.journal-icon {
+    width: 39px;
+    height: 39px;
+    flex-shrink: 0;
+    border-radius: 13px;
+    background: #fcebf2;
+    color: #cf83a2;
+    display: grid;
+    place-items: center;
+}
+
+.journal-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.journal-content h3 {
+    color: #765a6c;
+    font-size: 13px;
+    margin-bottom: 6px;
+}
+
+.journal-time {
+    color: #a18e9c;
+    font-size: 10px;
+}
+
+.mood-tag {
+    display: inline-block;
+    margin-left: 7px;
+    padding: 4px 8px;
+    background: #fff0f6;
+    border-radius: 20px;
+    color: #b57492;
+    font-size: 10px;
+}
+
+.journal-content p {
+    color: #92818f;
+    font-size: 11px;
+    line-height: 1.8;
+    margin-top: 8px;
+    overflow-wrap: anywhere;
+}
+
+.delete-button {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    border: 0;
+    border-radius: 9px;
+    background: #fff0f1;
+    color: #c77b85;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background: #fbdede;
+}
+
+/* PESAN PENUTUP */
+
+.closing-message {
+    margin-top: 27px;
+    padding: 30px;
+    border-radius: 19px;
+    background: #fcecf3;
+    text-align: center;
+    color: #bd7895;
+}
+
+.closing-message > i {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.closing-message h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    color: #80576d;
+    margin-bottom: 8px;
+}
+
+.closing-message p {
+    color: #a17f93;
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+footer {
+    padding: 35px 10px 10px;
+    text-align: center;
+    color: #a897a4;
+    font-size: 10px;
+}
+
+/* RESPONSIVE TABLET */
+
+@media (max-width: 850px) {
+    .ideas-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .selfcare-layout {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* RESPONSIVE HP */
+
+@media (max-width: 550px) {
+    .selfcare-container {
+        width: 92%;
+        padding-top: 25px;
+    }
+
+    .selfcare-hero {
+        padding: 28px;
+    }
+
+    .hero-decoration {
+        display: none;
+    }
+
+    .ideas-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .selfcare-stats {
+        gap: 10px;
+    }
+
+    .stat-card {
+        padding: 15px;
+    }
+
+    .selfcare-form-card,
+    .selfcare-history-card {
+        padding: 20px;
+    }
+
+    .selfcare-topbar {
+        padding: 0 4%;
+    }
+
+    .history-heading {
+        flex-direction: column;
+    }
+
+    .history-heading form {
+        width: 100%;
+    }
+
+    .closing-message {
+        padding: 23px;
+    }
+
+    .idea-modal-content {
+        padding: 25px 22px;
+    }
+}
